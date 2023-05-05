@@ -1,11 +1,11 @@
-import 'package:afoola/screens/splash_screen.dart';
-import 'package:afoola/screens/uffata_detail_screen.dart';
-import 'package:afoola/screens/uffata_screen.dart';
+import '../screens/nyata_detail_screen.dart';
+import '../screens/splash_screen.dart';
+import '../screens/uffata_detail_screen.dart';
+import '../screens/uffata_screen.dart';
 
 import '../screens/hibbo_detail_screen.dart';
 import '../screens/hibbo_screen.dart';
 import '../screens/over_view_detail_screen.dart';
-import '../screens/over_view_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -45,7 +45,8 @@ class MyApp extends StatelessWidget {
          HibboDetailScreen.routName: (ctx) => const HibboDetailScreen(),
          OverViewDetailScreen.routName: (ctx) => const OverViewDetailScreen(),
          UffataDetailScreen.routName:(ctx)=>UffataDetailScreen(),
-         UffataScreen.routeName:(ctx)=>UffataScreen()
+         UffataScreen.routeName:(ctx)=>const UffataScreen(),
+         NyataDetailScreen.routeName:(ctx)=>const NyataDetailScreen()
        },
      );
 

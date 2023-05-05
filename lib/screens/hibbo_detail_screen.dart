@@ -35,6 +35,7 @@ class HibboDetailScreen extends StatelessWidget {
                   "\" ${_selectedQuiz.questions} \"",
                   style: const TextStyle(
                     fontSize: 22,
+                    fontFamily: 'Raleway',
                     fontWeight: FontWeight.bold,
                     color: Color(0xff654321),
                   ),
@@ -49,6 +50,7 @@ class HibboDetailScreen extends StatelessWidget {
                       "Deebii: ",
                       style: TextStyle(
                         fontSize: 22,
+                        fontFamily: 'Pacifico',
                         fontWeight: FontWeight.bold,
                         color: Color(0xff654321),
                       ),
@@ -83,7 +85,10 @@ class HibboDetailScreen extends StatelessWidget {
                   ),
                   child: const Text(
                     "Share on Social Media",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                        fontSize: 20,
+                      fontFamily: 'Pacifico'
+                    ),
                   ),
                 ),
               ],

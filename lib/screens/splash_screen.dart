@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
+    return const MaterialApp(
       home: SplashScreen(),
     );
   }
 }
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 2),
     )..forward();
     _colorAnimation = ColorTween(begin: Colors.blue, end: Colors.green)
         .animate(_controller);
@@ -60,13 +60,25 @@ class _SplashScreenState extends State<SplashScreen>
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Hero(
+                  tag: 'appLogo',
+                  child: Image.asset(
+                    'assets/images/o.jpg',
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height*0.4,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
               const Text(
                 'Afoola Oromoo',
                 style: TextStyle(
                   fontSize: 36,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Raleway',
-                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                  color: Colors.green,
                 ),
               ),
               const SizedBox(height: 20),

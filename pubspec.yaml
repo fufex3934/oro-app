@@ -93,6 +93,10 @@ flutter:
           weight: 300
         - asset: assets/fonts/RobotoCondensed-Italic.ttf
           style: italic
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

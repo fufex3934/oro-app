@@ -1,18 +1,20 @@
-import 'package:afoola/screens/uffata_detail_screen.dart';
+
+import 'package:afoola/screens/nyata_detail_screen.dart';
 import 'package:flutter/material.dart';
 
-class UffataItem extends StatelessWidget {
+class NyataItem extends StatelessWidget {
   final String imageUrl;
   final String description;
+  final String title;
   final String source;
-  final String uses;
-
-  const UffataItem({
+  final String dateUsed;
+  const NyataItem({
     required this.imageUrl,
+    required this.title,
     required this.description,
-    required this.uses,
     required this.source,
-  });
+    required this.dateUsed
+});
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +35,13 @@ class UffataItem extends StatelessWidget {
                 onTap: (){
                   Navigator.pushNamed(
                       context,
-                      UffataDetailScreen.routName,
-                    arguments: {
+                      NyataDetailScreen.routeName,
+                      arguments: {
                         'image':imageUrl,
-                      'description':description,
-                      'src':source,
-                      'use':uses
-                    }
+                        'description':description,
+                        'title':title,
+                        'date':dateUsed
+                      }
                   );
                 },
                 child: ClipRRect(
@@ -59,7 +61,7 @@ class UffataItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      description,
+                      title,
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -78,7 +80,7 @@ class UffataItem extends StatelessWidget {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            uses,
+                            description,
                             style: const TextStyle(
                               fontSize: 16,
                               fontFamily: 'Pacifico',

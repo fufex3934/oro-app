@@ -32,7 +32,7 @@ class HibboItem extends StatelessWidget {
                   height: 40,
                 ),
               ),
-              SizedBox(width: 16),
+              const SizedBox(width: 16),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +41,8 @@ class HibboItem extends StatelessWidget {
                       title,
                       style: const TextStyle(
                         fontSize: 22,
-                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Pacifico',
+                        fontWeight: FontWeight.w300,
                       ),
                     ),
                     const SizedBox(height: 10),
@@ -49,6 +50,7 @@ class HibboItem extends StatelessWidget {
                       question,
                       style: TextStyle(
                         fontSize: 18,
+                        fontFamily: 'Raleway',
                         color: Colors.grey[800],
                       ),
                     ),

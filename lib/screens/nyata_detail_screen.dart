@@ -1,8 +1,8 @@
-import 'package:afoola/widgets/app_drawer.dart';
 import 'package:flutter/material.dart';
 
-class UffataDetailScreen extends StatelessWidget {
-  static const routName = 'uffata-detail';
+class NyataDetailScreen extends StatelessWidget {
+  static const routeName = 'nyata-detail';
+  const NyataDetailScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,8 +56,8 @@ class UffataDetailScreen extends StatelessWidget {
                         _args['description'],
                         style: const TextStyle(
                           fontSize: 24,
-                          fontFamily: 'Pacifico',
                           fontWeight: FontWeight.bold,
+                          fontFamily: 'Pacifico',
                           color: Colors.black87,
                         ),
                       ),
@@ -71,7 +71,7 @@ class UffataDetailScreen extends StatelessWidget {
                           ),
                           SizedBox(width: 10),
                           Text(
-                            "Guyyaa Ayyaanaaf",
+                            "Nyaata Baay'ee Filatamaadha",
                             style:  TextStyle(
                               fontSize: 18,
                               color: Colors.grey,
@@ -90,7 +90,7 @@ class UffataDetailScreen extends StatelessWidget {
                           ),
                           SizedBox(width: 10),
                           Text(
-                            'Fuudhaaf Heerumaaf',
+                            "Mi'aayina Guddaa qaba",
                             style:  TextStyle(
                               fontSize: 18,
                               color: Colors.grey,
@@ -102,16 +102,16 @@ class UffataDetailScreen extends StatelessWidget {
                       const SizedBox(height: 10),
                       Expanded(
                         child: Row(
-                          children: const [
-                            Icon(
+                          children:  [
+                            const Icon(
                               Icons.check_circle,
                               size: 20,
                               color: Colors.green,
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Text(
-                              "Kabaja Guyyaa Dhalootaaf",
-                              style:  TextStyle(
+                              _args['date'],
+                              style:  const TextStyle(
                                 fontSize: 18,
                                 color: Colors.grey,
                                 fontStyle: FontStyle.italic,

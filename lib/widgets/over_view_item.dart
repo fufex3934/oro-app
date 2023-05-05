@@ -34,7 +34,7 @@ class OverViewItems extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
+                  color: Colors.black87.withOpacity(0.3),
                   spreadRadius: 1,
                   blurRadius: 8,
                   offset: const Offset(0, 5),
@@ -68,9 +68,9 @@ class OverViewItems extends StatelessWidget {
                       title,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                        color: Colors.white,
+                        color: Colors.white38,
                         fontSize: 22.0,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w900,
                         shadows: [
                           Shadow(
                             color: Colors.black,
