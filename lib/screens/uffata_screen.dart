@@ -10,7 +10,6 @@ class UffataScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: AppDrawer(),
       body: ListView.builder(
           itemBuilder: (context,index){
             return UffataItem(

@@ -8,7 +8,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Wallaggaa',
       imageUrl: 'assets/images/anchote.png',
       description: 'Anchote',
-     source: 'Social Media',
+     source: 'src:Social Media',
     dateUse: 'Guyyaa Ayyaana Masqalaaf'
   ),
   const NyataAda(
@@ -16,7 +16,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Shawaa',
       imageUrl: 'assets/images/shawaf.jpg',
       description: 'Gorsoddomaa',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Cidhaaf'
   ),
   const NyataAda(
@@ -24,7 +24,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Arsii',
       imageUrl: 'assets/images/arsif.jpg',
       description: 'Marqaa',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'yeroo Cidhaaf'
   ),
   const NyataAda(
@@ -32,7 +32,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Gujii',
       imageUrl: 'assets/images/gujif.jpg',
       description: 'Buna Qalaa',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Ayaanaaf'
   ),
   const NyataAda(
@@ -40,7 +40,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Wallagaa',
       imageUrl: 'assets/images/wall.jpg',
       description: 'Caccabsaa',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Cidhaaf'
   ),
   const NyataAda(
@@ -48,7 +48,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Harargee',
       imageUrl: 'assets/images/harar.jpg',
       description: 'Affeelama',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Ayaanaaf'
   ),
   const NyataAda(
@@ -56,7 +56,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Jimmaa',
       imageUrl: 'assets/images/bunaji.jpg',
       description: 'Buna Jimmaa',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Ayyaanaaf'
   ),
   const NyataAda(
@@ -64,7 +64,7 @@ final List<NyataAda> nyata =[
       title: 'Nyaata Aadaa Oromoo Walloo',
       imageUrl: 'assets/images/wallof.jpg',
       description: 'Cooma',
-      source: 'Social Media',
+      source: 'src:Social Media',
     dateUse: 'Yeroo Cidhaaf'
   ),
 ];

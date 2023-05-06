@@ -1,3 +1,6 @@
+import '../dummy/const.dart';
+import '../screens/over_view_screen.dart';
+
 import '../screens/nyata_detail_screen.dart';
 import '../screens/splash_screen.dart';
 import '../screens/uffata_detail_screen.dart';
@@ -23,30 +26,18 @@ class MyApp extends StatelessWidget {
        title: 'Afoola Oromoo',
        debugShowCheckedModeBanner: false,
        theme: ThemeData(
-         colorScheme: ColorScheme.fromSwatch(
-           primarySwatch: const MaterialColor(0xFF2D5B5B, <int, Color>{
-             50: Color(0xFFE4F4F4),
-             100: Color(0xFFBCE2E2),
-             200: Color(0xFF8FCECF),
-             300: Color(0xFF62BABD),
-             400: Color(0xFF3DA6A9),
-             500: Color(0xFF2D5B5B), // Primary color
-             600: Color(0xFF206C6C),
-             700: Color(0xFF175E5E),
-             800: Color(0xFF0D5050),
-             900: Color(0xFF004040),
-           }),
-         ).copyWith(secondary: Colors.amber),
+         colorScheme: primaryColors,
          fontFamily: "RobotoCondensed",
        ),
-       home:  SplashScreen(),
+       home:  const SplashScreen(),
        routes: {
          HibboScreen.routName: (ctx) => const HibboScreen(),
          HibboDetailScreen.routName: (ctx) => const HibboDetailScreen(),
          OverViewDetailScreen.routName: (ctx) => const OverViewDetailScreen(),
          UffataDetailScreen.routName:(ctx)=>UffataDetailScreen(),
          UffataScreen.routeName:(ctx)=>const UffataScreen(),
-         NyataDetailScreen.routeName:(ctx)=>const NyataDetailScreen()
+         NyataDetailScreen.routeName:(ctx)=>const NyataDetailScreen(),
+         OverViewScreen.routeName:(ctx)=>const OverViewScreen()
        },
      );
 

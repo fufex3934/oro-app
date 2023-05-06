@@ -1,11 +1,12 @@
 
-import 'package:afoola/widgets/app_drawer.dart';
-import 'package:afoola/widgets/over_view_item.dart';
+import '../widgets/app_drawer.dart';
+import '../widgets/over_view_item.dart';
 import 'package:flutter/material.dart';
 
 import '../dummy/dummy_data.dart';
 
 class OverViewScreen extends StatelessWidget {
+  static const routeName = '/overview-screen';
   const OverViewScreen({Key? key}) : super(key: key);
 
   @override
@@ -14,7 +15,7 @@ class OverViewScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-            'Afoola,Nyaataa fi Uffannaa Oromoo',
+            'Afoola Nyaataa fi Uffannaa Oromoo',
           style: TextStyle(
             fontFamily: 'RobotoCondensed',
             fontSize: 20,

@@ -65,7 +65,7 @@ class _SplashScreenState extends State<SplashScreen>
                 child: Hero(
                   tag: 'appLogo',
                   child: Image.asset(
-                    'assets/images/o.jpg',
+                    'assets/images/om.jpg',
                     width: double.infinity,
                     height: MediaQuery.of(context).size.height*0.4,
                   ),
@@ -75,16 +75,16 @@ class _SplashScreenState extends State<SplashScreen>
               const Text(
                 'Afoola Oromoo',
                 style: TextStyle(
-                  fontSize: 36,
+                  fontSize: 40,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Pacifico',
-                  color: Colors.green,
+                  color: Colors.deepPurpleAccent,
                 ),
               ),
               const SizedBox(height: 20),
               SizedBox(
-                width: 100,
-                height: 100,
+                width: 50,
+                height: 50,
                 child: CircularProgressIndicator(
                   strokeWidth: 6,
                   valueColor: _colorAnimation,
