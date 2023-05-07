@@ -8,6 +8,7 @@ import 'hibbo_screen.dart';
 import 'mamaksa_screen.dart';
 import 'nyata_screen.dart';
 
+
 class OverViewDetailScreen extends StatelessWidget {
   static const routName = '/over-view-detail';
   const OverViewDetailScreen( {super.key});
